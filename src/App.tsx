@@ -58,7 +58,7 @@ function App() {
 
   React.useEffect(() => {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${state.location}&limit=5&appid=974d45cc941d8eced29291f05f08cea1`
+      `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/geo/1.0/direct?q=${state.location}&limit=5&appid=974d45cc941d8eced29291f05f08cea1`
     )
       .then((resp) => resp.json())
       .then((data) => ({ lat: data[0].lat, lon: data[0].lon }))
