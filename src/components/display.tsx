@@ -84,6 +84,7 @@ export default function Display(props: IProps) {
           type="text"
           value={value.value}
           onChange={handleValue}
+          placeholder="Digite a cidade..."
         />
         <button
           className="button--display"
@@ -139,6 +140,10 @@ export default function Display(props: IProps) {
           </section>
         </main>
       )}
+      <footer>
+        *Para resultados mais precisos acrescentar estado e/ou código do país
+        separados por vírgulas
+      </footer>
     </div>
   )
 }

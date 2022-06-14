@@ -32,9 +32,11 @@ form {
 }
 
 .input--display {
-  width: 200px;
+  font-size: 1rem;
+  width: 300px;
   height: 55px;
   border-radius: 25px;
+  padding: 0 20px;
 }
 
 .button--display {
@@ -46,7 +48,7 @@ form {
   font-size: 15px;
   border-radius: 50%;
   background-color: transparent;
-
+  padding: 3px;
 }
 
 .button--display:active {
@@ -146,6 +148,16 @@ hr {
 
 .iconsFA {
   font-size: 25px;
+}
+
+footer {
+  background-color: blue;
+  color: #ddd;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  font-size: 16px;
 }
 
 @media (max-width: 425px) {
