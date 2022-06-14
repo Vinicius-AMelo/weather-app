@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React from 'react'
 import {
   WiSunrise,
@@ -56,8 +55,7 @@ interface IProps {
   handleChange: (value: { value: string }) => void
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function handleSubmit(e: any) {
+function handleSubmit(e: React.SyntheticEvent) {
   e.preventDefault()
 }
 
@@ -74,14 +72,12 @@ export default function Display(props: IProps) {
   })
 
   const [value, setValue] = React.useState({ value: '' })
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  function handleValue(event: any) {
-    console.log(typeof event)
+  function handleValue(event: React.ChangeEvent<HTMLInputElement>) {
     setValue((oldValue) => ({ ...oldValue, value: event.target.value }))
   }
 
   return (
-    <div>
+    <div className="maindis">
       <form action="submit" onSubmit={handleSubmit}>
         <input
           className="input--display"

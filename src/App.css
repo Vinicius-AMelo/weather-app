@@ -9,26 +9,32 @@
 }
 
 body {
+  width: 100vw;
   font-size: 1.2rem;
   background-image: url("https://wallpaperaccess.com/full/45403.jpg");
-  /* background-size: 100vmax; */
+
+}
+
+.maindis {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   align-items: center;
-  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 form {
-  width: 500px;
-  margin: 50px auto;
+  margin-top: 30px;
+  width: 300px;
   display: flex;
   justify-content: center;
 }
 
 .input--display {
+  width: 200px;
   height: 55px;
   border-radius: 25px;
-  padding: 10px;
 }
 
 .button--display {
@@ -51,7 +57,6 @@ form {
 .main--display {
   color: #fff;
   width: 550px;
-  margin: 0 auto;
   background: rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
   backdrop-filter: blur(4px);
@@ -97,8 +102,6 @@ form {
 }
 
 #main--arch {
-  position: relative;
-  top: 21px;
   overflow: hidden;
   height: 100px;
 }
@@ -146,23 +149,21 @@ hr {
 }
 
 @media (max-width: 425px) {
-  body {
-    background-image: none;
-    background-color: red;
-    font-size: 1rem;
-  }
 
   .main--display {
     width: 95vw;
-    margin: 0 2.5vw
   }
 
   hr {
     width: 80%;
   }
 
+  #main--arch {
+    height: 10vw;
+  }
+
   #arch {
-    width: 200px;
-    height: 200px;
+    width: 30vw;
+    height: 30vw;
   }
 }
