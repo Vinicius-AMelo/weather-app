@@ -94,7 +94,7 @@ export default function Display(props: IProps) {
           type="submit"
           onClick={() => props.handleChange(value)}
         >
-         FIND
+          FIND
         </button>
       </form>
       {props.city.name && (

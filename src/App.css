@@ -6,31 +6,12 @@
   box-sizing: border-box;
   outline: 0;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.15rem;
 }
 
 body {
+  font-size: 1.2rem;
   background-image: url("https://wallpaperaccess.com/full/45403.jpg");
-  background-size: 100vmax;
-}
-
-.main--display {
-  color: #fff;
-  max-width: 550px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(3px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.icon--description {
+  /* background-size: 100vmax; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +25,7 @@ form {
   justify-content: center;
 }
 
-.input--display{
+.input--display {
   height: 55px;
   border-radius: 25px;
   padding: 10px;
@@ -66,6 +47,31 @@ form {
   transform: scale(0.8);
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
 }
+
+.main--display {
+  color: #fff;
+  width: 550px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+
+}
+
+.icon--description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 #capitalized {
   text-transform: capitalize;
@@ -104,33 +110,59 @@ form {
   border: 2px solid #fff;
 
 }
-hr{
+
+hr {
   margin-top: 10px;
   width: 470px;
   border: 0.1px solid #aaaaaa;
 }
 
-#details{
-  position: relative;
-  right: 200px;
+#details {
+  align-self: flex-start;
+  margin-left: 40px;
 }
-.minorInfos{
+
+.minorInfos {
   margin-top: 10px;
-  width: 550px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
 }
-.minorInfo{
+
+.minorInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3px;
 }
 
-.icons{
+.icons {
   font-size: 35px;
 }
-.iconsFA{
+
+.iconsFA {
   font-size: 25px;
+}
+
+@media (max-width: 425px) {
+  body {
+    background-image: none;
+    background-color: red;
+    font-size: 1rem;
+  }
+
+  .main--display {
+    width: 95vw;
+    margin: 0 2.5vw
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  #arch {
+    width: 200px;
+    height: 200px;
+  }
 }
