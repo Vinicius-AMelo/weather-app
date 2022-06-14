@@ -50,7 +50,7 @@ function App() {
   }
 
   const [state, setState] = React.useState({
-    location: 'Serra, Espírito Santo',
+    location: 'Vitória, Espírito Santo',
   })
   const [allState, setAllState] = React.useState(apiResp)
 
@@ -72,8 +72,6 @@ function App() {
       .then((resp2) => resp2.json())
       .then((data2) => setAllState(data2))
   }, [state])
-
-  console.log(allState)
 
   return (
     <div className="App">
